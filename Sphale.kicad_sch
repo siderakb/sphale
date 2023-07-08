@@ -7,7 +7,8 @@
   (title_block
     (title "Sphale")
     (rev "1.0")
-    (company "The Pro Micro compatible STM32 board")
+    (company "SideraKB")
+    (comment 1 "The Pro Micro compatible STM32 board")
   )
 
   (lib_symbols
@@ -1945,11 +1946,11 @@
     (stroke (width 0) (type default))
     (uuid 5f267648-cfe2-42ac-a46c-25be19c6c5e9)
   )
-  (wire (pts (xy 266.7 109.22) (xy 265.43 109.22))
+  (wire (pts (xy 237.49 144.78) (xy 236.22 144.78))
     (stroke (width 0) (type default))
     (uuid 5f47192c-528f-4bd7-a2cf-08b181cfb5a7)
   )
-  (wire (pts (xy 257.81 109.22) (xy 255.27 109.22))
+  (wire (pts (xy 228.6 144.78) (xy 226.06 144.78))
     (stroke (width 0) (type default))
     (uuid 609f7e12-4389-4a09-95e9-474962b43ea9)
   )
@@ -1977,7 +1978,7 @@
     (stroke (width 0) (type default))
     (uuid 8792e8f1-71b0-4748-911b-ac4906a7f96f)
   )
-  (wire (pts (xy 266.7 110.49) (xy 266.7 109.22))
+  (wire (pts (xy 237.49 146.05) (xy 237.49 144.78))
     (stroke (width 0) (type default))
     (uuid 89f87a34-d076-4983-b693-080c38688fa0)
   )
@@ -2666,10 +2667,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "PA8" (shape input) (at 247.65 109.22 180) (fields_autoplaced)
+  (global_label "PA8" (shape input) (at 218.44 144.78 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 827666b1-2226-40ef-b83a-1d6918bd8f47)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 241.1761 109.22 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 211.9661 144.78 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2838,7 +2839,7 @@
   (symbol (lib_id "power:+5V") (at 242.57 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 04241540-fac9-417e-b3ce-d7969b0852d7)
-    (property "Reference" "#PWR019" (at 242.57 67.31 0)
+    (property "Reference" "#PWR08" (at 242.57 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 242.57 59.69 0)
@@ -2854,7 +2855,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -2875,7 +2876,10 @@
     (property "Datasheet" "~" (at 85.09 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C307331" (at 85.09 31.75 0)
+    (property "LCSC" "C1525" (at 85.09 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "CL05B104KO5NNNC" (at 85.09 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2a6a1b7b-7a24-4919-b2aa-9bc37277a26f))
@@ -2892,7 +2896,7 @@
   (symbol (lib_id "power:GND") (at 31.75 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 049515e5-a692-40da-95a1-694503c16385)
-    (property "Reference" "#PWR06" (at 31.75 104.14 0)
+    (property "Reference" "#PWR013" (at 31.75 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 31.75 101.6 0)
@@ -2908,28 +2912,31 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:LED") (at 251.46 109.22 0) (mirror y) (unit 1)
+  (symbol (lib_id "Device:LED") (at 222.25 144.78 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 05ce4e0b-196b-4079-89c1-a9909cc4c5a8)
-    (property "Reference" "LD1" (at 252.73 104.14 0)
+    (property "Reference" "LD1" (at 223.52 139.7 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Red" (at 252.73 106.68 0)
+    (property "Value" "Red" (at 223.52 142.24 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 251.46 109.22 0)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 222.25 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 251.46 109.22 0)
+    (property "Datasheet" "~" (at 222.25 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C2286" (at 251.46 109.22 0)
+    (property "LCSC" "C2286" (at 222.25 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "    KT-0603R" (at 222.25 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 50f05c03-1863-4fe1-bb5d-5e010c98c1e6))
@@ -2946,7 +2953,7 @@
   (symbol (lib_id "power:GND") (at 59.69 97.79 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 05e54d17-1645-4995-aa10-cd7c525a3614)
-    (property "Reference" "#PWR05" (at 66.04 97.79 0)
+    (property "Reference" "#PWR014" (at 66.04 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 64.77 97.79 90)
@@ -2962,7 +2969,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -2971,7 +2978,7 @@
   (symbol (lib_id "power:+3.3V") (at 69.85 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 08cbc280-104c-4d08-9afd-95330c40e432)
-    (property "Reference" "#PWR08" (at 69.85 58.42 0)
+    (property "Reference" "#PWR05" (at 69.85 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 69.85 50.8 0)
@@ -2987,7 +2994,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -2996,7 +3003,7 @@
   (symbol (lib_id "power:GND") (at 138.43 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0968c887-9374-423c-8199-49e9514bb763)
-    (property "Reference" "#PWR09" (at 138.43 41.91 0)
+    (property "Reference" "#PWR04" (at 138.43 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 138.43 39.37 0)
@@ -3012,7 +3019,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -3021,7 +3028,7 @@
   (symbol (lib_id "power:GND") (at 114.3 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 13f352c9-376d-4f7e-b15f-ac43f7754fee)
-    (property "Reference" "#PWR02" (at 114.3 128.27 0)
+    (property "Reference" "#PWR015" (at 114.3 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 114.3 125.73 0)
@@ -3037,7 +3044,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -3061,6 +3068,9 @@
     (property "LCSC" "C269104" (at 63.5 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "SMD0805B050TF" (at 63.5 147.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid fa71cfc8-df21-4ee6-a070-7869ba9e0db2))
     (pin "2" (uuid 4b8d3dce-bd19-46b8-bd82-8e9c996f398a))
     (instances
@@ -3072,22 +3082,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 261.62 109.22 270) (mirror x) (unit 1)
+  (symbol (lib_id "Device:R") (at 232.41 144.78 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1bc5043e-0ce5-46e0-acae-053307f7153c)
-    (property "Reference" "R5" (at 261.62 106.68 90)
+    (property "Reference" "R3" (at 232.41 142.24 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10k" (at 261.62 109.22 90)
+    (property "Value" "5.1k" (at 232.41 144.78 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 261.62 110.998 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 232.41 146.558 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 261.62 109.22 0)
+    (property "Datasheet" "~" (at 232.41 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C25744" (at 261.62 109.22 0)
+    (property "LCSC" "C25905" (at 232.41 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "0402WGF5101TCE" (at 232.41 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 68b50d7e-93ba-4680-8b06-30ccf9902bf8))
@@ -3095,7 +3108,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "R5") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -3104,7 +3117,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x12") (at 234.95 76.2 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 278156df-77a1-423d-82c0-c4499c74277d)
-    (property "Reference" "J3" (at 236.22 59.69 0)
+    (property "Reference" "J2" (at 236.22 59.69 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x12" (at 232.41 79.375 0)
@@ -3117,6 +3130,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC" "" (at 234.95 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "" (at 234.95 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5500aae2-2b7e-4150-865c-7e1965c4dfa1))
@@ -3134,7 +3150,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "J3") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -3143,7 +3159,7 @@
   (symbol (lib_id "power:+3.3V") (at 138.43 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 29422fba-0460-4254-9f29-cf347d2b7eb4)
-    (property "Reference" "#PWR010" (at 138.43 31.75 0)
+    (property "Reference" "#PWR02" (at 138.43 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 138.43 24.13 0)
@@ -3159,7 +3175,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -3168,7 +3184,7 @@
   (symbol (lib_id "power:GND") (at 36.83 186.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 29ead12e-a535-4cd4-af00-a32017daeb62)
-    (property "Reference" "#PWR011" (at 36.83 193.04 0)
+    (property "Reference" "#PWR023" (at 36.83 193.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 36.83 190.5 0)
@@ -3184,7 +3200,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -3208,6 +3224,9 @@
     (property "LCSC" "C52923" (at 115.57 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "CL05A105KA5NQNC" (at 115.57 168.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid b4e237cc-d851-4109-9446-1a9df97eba1b))
     (pin "2" (uuid 545b8cd5-d9ad-44c0-a039-90b4092b9140))
     (instances
@@ -3222,7 +3241,7 @@
   (symbol (lib_id "Device:C") (at 105.41 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b224028-bd7c-46d0-8271-e5e215476152)
-    (property "Reference" "C2" (at 101.6 29.21 0)
+    (property "Reference" "C5" (at 101.6 29.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 99.06 34.29 0)
@@ -3234,7 +3253,10 @@
     (property "Datasheet" "~" (at 105.41 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C307331" (at 105.41 31.75 0)
+    (property "LCSC" "C1525" (at 105.41 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "CL05B104KO5NNNC" (at 105.41 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1d9256cf-079e-4ed3-8a1b-835a111f5afc))
@@ -3242,7 +3264,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "C2") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -3251,7 +3273,7 @@
   (symbol (lib_id "Device:R") (at 57.15 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 382cc235-0b49-4c8e-be89-38abb4b4bf54)
-    (property "Reference" "R2" (at 57.15 149.86 90)
+    (property "Reference" "R4" (at 57.15 149.86 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5.1k" (at 57.15 152.4 90)
@@ -3266,12 +3288,15 @@
     (property "LCSC" "C25905" (at 57.15 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "0402WGF5101TCE" (at 57.15 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid df8dbb28-dee0-4cc3-8a9c-d8e4e9bd46ab))
     (pin "2" (uuid 4c3a249f-b0d3-4719-a328-d050a1b6ba65))
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "R2") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -3280,7 +3305,7 @@
   (symbol (lib_id "Connector:USB_C_Receptacle_USB2.0") (at 36.83 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 400784b0-24d3-40b1-8879-68d20cd552c4)
-    (property "Reference" "J1" (at 36.83 140.97 0)
+    (property "Reference" "J4" (at 36.83 140.97 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "USB_C_Receptacle_USB2.0" (at 36.83 143.51 0)
@@ -3293,6 +3318,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC" "C165948" (at 36.83 162.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "TYPE-C-31-M-12" (at 36.83 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "A1" (uuid 0221fcd4-23b1-48c4-bdb1-442d8d6df738))
@@ -3315,7 +3343,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "J1") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -3324,7 +3352,7 @@
   (symbol (lib_id "power:VBUS") (at 54.61 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 410c4f6d-00c0-4e96-a466-38d98970d8bb)
-    (property "Reference" "#PWR014" (at 54.61 151.13 0)
+    (property "Reference" "#PWR017" (at 54.61 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 54.61 143.51 0)
@@ -3340,7 +3368,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -3349,7 +3377,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x12") (at 217.17 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4200b717-c759-4bb6-895b-a6a3832cfd22)
-    (property "Reference" "J2" (at 215.9 59.69 0)
+    (property "Reference" "J1" (at 215.9 59.69 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x12" (at 219.71 79.375 0)
@@ -3362,6 +3390,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC" "" (at 217.17 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "" (at 217.17 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid aaee0ac5-4825-498d-82cc-3b050407b52f))
@@ -3379,7 +3410,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "J2") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -3388,7 +3419,7 @@
   (symbol (lib_id "power:GND") (at 241.3 66.04 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42f6dbbf-9b5e-4101-93c0-3ebbf34707bc)
-    (property "Reference" "#PWR022" (at 247.65 66.04 0)
+    (property "Reference" "#PWR09" (at 247.65 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 246.38 66.04 90)
@@ -3404,7 +3435,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -3428,6 +3459,9 @@
     (property "LCSC" "C123899" (at 77.47 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "B5817WS" (at 77.47 147.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 5b79defe-8b84-42b3-88dc-b4e5550f7be8))
     (pin "2" (uuid d4d83194-e39e-43f6-b9a1-8a7749975eae))
     (instances
@@ -3442,7 +3476,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 69.85 59.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 57b9ce21-befd-4968-bdff-d211057c089f)
-    (property "Reference" "SW3" (at 63.5 57.15 90)
+    (property "Reference" "SW2" (at 63.5 57.15 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "BOOT" (at 62.23 62.23 90)
@@ -3454,7 +3488,10 @@
     (property "Datasheet" "~" (at 64.77 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C231329" (at 69.85 59.69 0)
+    (property "LCSC" "C498294" (at 69.85 59.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "TS-1064S-A1B2-D4" (at 69.85 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1002b970-b3f9-4aef-adc3-5261e4c07f35))
@@ -3462,7 +3499,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "SW3") (unit 1)
+          (reference "SW2") (unit 1)
         )
       )
     )
@@ -3483,7 +3520,10 @@
     (property "Datasheet" "~" (at 41.91 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C231329" (at 46.99 50.8 0)
+    (property "LCSC" "C498294" (at 46.99 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "TS-1064S-A1B2-D4" (at 46.99 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5cea0d3a-b943-4927-90f4-b16986d53df5))
@@ -3525,7 +3565,7 @@
   (symbol (lib_id "power:GND") (at 69.85 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 615100f0-47c6-4665-b0e2-3f00aef0e047)
-    (property "Reference" "#PWR07" (at 69.85 80.01 0)
+    (property "Reference" "#PWR012" (at 69.85 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 69.85 77.47 0)
@@ -3541,7 +3581,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -3562,7 +3602,10 @@
     (property "Datasheet" "https://www.torexsemi.com/file/xc6220/XC6220.pdf" (at 156.21 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C47773" (at 137.16 165.1 0)
+    (property "LCSC" "C587158" (at 137.16 165.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "TPRT9013-33GB" (at 137.16 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e3f08c23-8efe-40b8-9cda-35c615f1c2d5))
@@ -3582,7 +3625,7 @@
   (symbol (lib_id "Device:C") (at 39.37 91.44 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6c9c61d1-532e-4cca-95da-fe6fbe3c86ba)
-    (property "Reference" "C8" (at 40.64 87.63 90)
+    (property "Reference" "C9" (at 40.64 87.63 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "12pF" (at 41.91 95.25 90)
@@ -3597,12 +3640,15 @@
     (property "LCSC" "C1547" (at 39.37 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "0402CG120J500NT" (at 39.37 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 33f09382-496f-4735-99ce-ca4a76acce66))
     (pin "2" (uuid 734fef7b-8d9e-4a3d-b818-aed4f293072b))
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "C8") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -3611,7 +3657,7 @@
   (symbol (lib_id "Device:C") (at 64.77 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 72309f4b-9d0f-41f7-b7ac-05d24f0dba2e)
-    (property "Reference" "C5" (at 60.96 29.21 0)
+    (property "Reference" "C1" (at 60.96 29.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 58.42 34.29 0)
@@ -3626,12 +3672,15 @@
     (property "LCSC" "C15525" (at 64.77 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "CL05A106MQ5NUNC" (at 64.77 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid af2da767-c134-4853-88ae-af70cdcbf6e0))
     (pin "2" (uuid 5119a5e4-b1e1-4799-8ca9-0e4e08875ab3))
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "C5") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -3640,7 +3689,7 @@
   (symbol (lib_id "Device:C") (at 138.43 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 758c7d94-0853-4e75-b12d-886b52a17223)
-    (property "Reference" "C10" (at 139.7 29.21 0)
+    (property "Reference" "C7" (at 139.7 29.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 139.7 34.29 0)
@@ -3655,12 +3704,15 @@
     (property "LCSC" "C52923" (at 138.43 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "CL05A105KA5NQNC" (at 138.43 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 8bfb3f24-3666-46d7-b311-3019379b47a2))
     (pin "2" (uuid fa24cd91-7c73-411c-8d9d-49b289f1873f))
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "C10") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -3669,7 +3721,7 @@
   (symbol (lib_id "power:+3.3V") (at 152.4 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7f6b9ffb-c7bf-406f-8c5f-149c70eb47a3)
-    (property "Reference" "#PWR017" (at 152.4 166.37 0)
+    (property "Reference" "#PWR021" (at 152.4 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 152.4 158.75 0)
@@ -3685,7 +3737,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -3694,7 +3746,7 @@
   (symbol (lib_id "Device:C") (at 74.93 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8c927e9c-a77e-42d5-b693-eefcf88bdca9)
-    (property "Reference" "C4" (at 71.12 29.21 0)
+    (property "Reference" "C2" (at 71.12 29.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 68.58 34.29 0)
@@ -3706,7 +3758,10 @@
     (property "Datasheet" "~" (at 74.93 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C307331" (at 74.93 31.75 0)
+    (property "LCSC" "C1525" (at 74.93 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "CL05B104KO5NNNC" (at 74.93 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d01d0fc6-bbc7-4a50-9d5b-fa9a27dae353))
@@ -3714,7 +3769,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "C4") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -3723,7 +3778,7 @@
   (symbol (lib_id "power:GND") (at 210.82 69.85 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8d463223-dffd-4e2f-a7a8-d58958b11a8b)
-    (property "Reference" "#PWR020" (at 204.47 69.85 0)
+    (property "Reference" "#PWR010" (at 204.47 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 205.74 69.85 90)
@@ -3739,7 +3794,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -3748,7 +3803,7 @@
   (symbol (lib_id "Device:R") (at 69.85 69.85 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 91fde312-169a-49a5-91b1-07eac75e42a5)
-    (property "Reference" "R1" (at 67.31 69.85 90)
+    (property "Reference" "R2" (at 67.31 69.85 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 69.85 69.85 90)
@@ -3763,12 +3818,15 @@
     (property "LCSC" "C25744" (at 69.85 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "0402WGF1002TCE" (at 69.85 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 7ad708e6-9618-4eda-8a6c-e5d026c7cf61))
     (pin "2" (uuid 8f2eb972-97f2-45fc-9696-728e67539370))
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "R1") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -3802,7 +3860,7 @@
   (symbol (lib_id "power:+5V") (at 86.36 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 94d111ce-4ea8-4f0c-9592-19c00013f58e)
-    (property "Reference" "#PWR013" (at 86.36 151.13 0)
+    (property "Reference" "#PWR018" (at 86.36 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 86.36 143.51 0)
@@ -3818,7 +3876,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -3827,7 +3885,7 @@
   (symbol (lib_id "Device:C") (at 128.27 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 98153465-b127-4bc7-93be-4f1805c02ae4)
-    (property "Reference" "C9" (at 129.54 29.21 0)
+    (property "Reference" "C6" (at 129.54 29.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10nF" (at 129.54 34.29 0)
@@ -3842,12 +3900,15 @@
     (property "LCSC" "C15195" (at 128.27 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "CL05B103KB5NNNC" (at 128.27 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 1aca2ad1-72a5-44ab-a45c-9a8fccb6d3cb))
     (pin "2" (uuid a67cdcaf-4082-404f-bdc0-cfc0108a55d0))
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "C9") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -3869,6 +3930,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC" "C81523" (at 114.3 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "STM32F303CCT6" (at 114.3 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid bebc13b2-e3fd-4f23-975d-e6c00cb20e4b))
@@ -3946,6 +4010,9 @@
     (property "LCSC" "C2682774" (at 54.61 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "X32258MSB4SI" (at 54.61 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 13f08a4e-cdc9-47ae-9b36-dac7cd8474b3))
     (pin "2" (uuid 9fc7e8c9-35e8-40e1-a7f8-2dd4ec93b840))
     (pin "3" (uuid e054905b-d49a-4d2a-b4dc-0462dd46264b))
@@ -3962,7 +4029,7 @@
   (symbol (lib_id "Device:R") (at 57.15 154.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a3ed49d9-692b-4216-bef2-90e916de180e)
-    (property "Reference" "R3" (at 57.15 157.48 90)
+    (property "Reference" "R5" (at 57.15 157.48 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5.1k" (at 57.15 154.94 90)
@@ -3977,37 +4044,40 @@
     (property "LCSC" "C25905" (at 57.15 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "0402WGF5101TCE" (at 57.15 154.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 30ea4eba-e064-46d5-862a-011d8ff8946a))
     (pin "2" (uuid 48dd2d13-b1b1-465a-937b-c47b58eb5106))
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "R3") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 266.7 110.49 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 237.49 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b8ec2de8-f91d-4090-bb1c-2ae6c1e15e61)
-    (property "Reference" "#PWR021" (at 266.7 116.84 0)
+    (property "Reference" "#PWR016" (at 237.49 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 266.7 114.3 0)
+    (property "Value" "GND" (at 237.49 149.86 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 266.7 110.49 0)
+    (property "Footprint" "" (at 237.49 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 266.7 110.49 0)
+    (property "Datasheet" "" (at 237.49 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 01cde6ed-931f-4269-8bd0-b12f7a96e859))
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -4016,7 +4086,7 @@
   (symbol (lib_id "Device:C") (at 39.37 104.14 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ceb7dc87-2d3c-4f14-8484-b0e577ada418)
-    (property "Reference" "C7" (at 40.64 100.33 90)
+    (property "Reference" "C10" (at 40.64 100.33 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "12pF" (at 41.91 107.95 90)
@@ -4031,12 +4101,15 @@
     (property "LCSC" "C1547" (at 39.37 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "0402CG120J500NT" (at 39.37 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 93f3506b-b189-4cf1-be7a-f2feed845411))
     (pin "2" (uuid 72b4bd79-5b9b-4985-84fc-920019419350))
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "C7") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -4045,7 +4118,7 @@
   (symbol (lib_id "power:GND") (at 72.39 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d5588d5e-d497-4b2f-9d2e-fc2db76108ee)
-    (property "Reference" "#PWR012" (at 72.39 161.29 0)
+    (property "Reference" "#PWR019" (at 72.39 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 72.39 158.75 0)
@@ -4061,7 +4134,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -4070,7 +4143,7 @@
   (symbol (lib_id "power:+3.3V") (at 241.3 71.12 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d59ef633-97e8-4b95-bd95-868966fb0341)
-    (property "Reference" "#PWR023" (at 237.49 71.12 0)
+    (property "Reference" "#PWR011" (at 237.49 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 243.84 71.12 90)
@@ -4086,7 +4159,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -4110,6 +4183,9 @@
     (property "LCSC" "C52923" (at 152.4 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "CL05A105KA5NQNC" (at 152.4 168.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 5ba3ca31-4917-476a-b534-0a8ec16add52))
     (pin "2" (uuid 09febd48-a977-42ac-a5d0-97f0f6e6fca2))
     (instances
@@ -4124,7 +4200,7 @@
   (symbol (lib_id "Device:R") (at 146.05 63.5 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e20a04e4-41f0-4b81-a4c1-36ab33db2663)
-    (property "Reference" "R4" (at 149.86 62.23 0)
+    (property "Reference" "R1" (at 149.86 62.23 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1.5k" (at 149.86 64.77 0)
@@ -4139,12 +4215,15 @@
     (property "LCSC" "C2984410" (at 146.05 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "ARG02BTC1501" (at 146.05 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 9cac4b1f-f67d-43c0-9804-710074e9dd83))
     (pin "2" (uuid 12f905cb-96a7-4ae1-936f-bcaaba8e6e37))
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "R4") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -4153,7 +4232,7 @@
   (symbol (lib_id "power:+3.3V") (at 146.05 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ea2af365-879a-4728-92a6-b61fd38a13b3)
-    (property "Reference" "#PWR015" (at 146.05 63.5 0)
+    (property "Reference" "#PWR07" (at 146.05 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 146.05 55.88 0)
@@ -4169,7 +4248,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -4178,7 +4257,7 @@
   (symbol (lib_id "Device:C") (at 52.07 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ec1b178a-815b-4da9-9b57-69e360fe5910)
-    (property "Reference" "C6" (at 53.34 48.26 0)
+    (property "Reference" "C8" (at 53.34 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 53.34 53.34 0)
@@ -4190,7 +4269,10 @@
     (property "Datasheet" "~" (at 52.07 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C307331" (at 52.07 50.8 0)
+    (property "LCSC" "C1525" (at 52.07 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "CL05B104KO5NNNC" (at 52.07 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 31477727-8db6-496d-9334-1eb7cc497169))
@@ -4198,7 +4280,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "C6") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -4207,7 +4289,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x05") (at 226.06 95.25 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f022aed8-778d-4603-9b42-b76b71ac6365)
-    (property "Reference" "J4" (at 226.06 92.71 90)
+    (property "Reference" "J3" (at 226.06 92.71 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x05" (at 226.06 92.71 90)
@@ -4222,6 +4304,9 @@
     (property "LCSC" "" (at 226.06 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFR. Part#" "" (at 226.06 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid b419566c-9470-44d3-9d35-26d2ab98dec0))
     (pin "2" (uuid 9c08afb1-6a79-41d6-a43f-f190c9fff596))
     (pin "3" (uuid f8c7464a-93c1-4d1a-bc37-5903cf0157fd))
@@ -4230,7 +4315,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "J4") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -4239,7 +4324,7 @@
   (symbol (lib_id "power:GND") (at 137.16 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f384eeae-f266-4e42-97d1-ad1c11f1fe40)
-    (property "Reference" "#PWR016" (at 137.16 182.88 0)
+    (property "Reference" "#PWR022" (at 137.16 182.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 137.16 180.34 0)
@@ -4255,7 +4340,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -4264,7 +4349,7 @@
   (symbol (lib_id "power:GND") (at 46.99 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f4d053e5-72c8-48f0-8445-b073e6504f6c)
-    (property "Reference" "#PWR04" (at 46.99 62.23 0)
+    (property "Reference" "#PWR06" (at 46.99 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 46.99 59.69 0)
@@ -4280,7 +4365,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -4289,7 +4374,7 @@
   (symbol (lib_id "power:+5V") (at 115.57 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fa130ead-97e1-42f4-b96b-217b17c9657e)
-    (property "Reference" "#PWR018" (at 115.57 166.37 0)
+    (property "Reference" "#PWR020" (at 115.57 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 115.57 158.75 0)
@@ -4305,7 +4390,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -4314,7 +4399,7 @@
   (symbol (lib_id "Device:C") (at 95.25 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ffbcd8d7-3109-4ee0-8bea-f2c2fb4c08e4)
-    (property "Reference" "C1" (at 91.44 29.21 0)
+    (property "Reference" "C4" (at 91.44 29.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 88.9 34.29 0)
@@ -4326,7 +4411,10 @@
     (property "Datasheet" "~" (at 95.25 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C307331" (at 95.25 31.75 0)
+    (property "LCSC" "C1525" (at 95.25 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR. Part#" "CL05B104KO5NNNC" (at 95.25 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 63497404-efbc-4921-90cb-4470fe5e9304))
@@ -4334,7 +4422,7 @@
     (instances
       (project "Sphale"
         (path "/ac2bf748-977a-4278-8a5b-60a2c51a1a79"
-          (reference "C1") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )

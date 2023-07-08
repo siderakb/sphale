@@ -5,7 +5,6 @@
 Pro Micro/Proton C compatible [STM32F303CC](https://www.st.com/en/microcontrollers-microprocessors/stm32f303cc.html) board, specialized design for [QMK](https://github.com/qmk/qmk_firmware) keyboards.
 
 > ***Sphale***rite  
-> A part of [ErgoSNM keyboard](https://github.com/ziteh/ergo-snm-keyboard) project.  
 
 ## Board Characteristics
 
